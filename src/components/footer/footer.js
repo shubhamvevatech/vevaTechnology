@@ -23,7 +23,7 @@ const Footer = () => {
           <a href="mailto:info@vevatechnology.com">
             📧 info@vevatechnology.com
           </a>
-        </div>
+        </div> 
 
         {/* OFFERINGS */}
         <div className="footer-col">
