@@ -10,7 +10,8 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="footer-container">
+    <div className="container">
+      <div className="footer-section-main">
 
         {/* LEFT */}
         <div className="footer-brand">
@@ -23,7 +24,7 @@ const Footer = () => {
           <a href="mailto:info@vevatechnology.com">
             📧 info@vevatechnology.com
           </a>
-        </div> 
+        </div>  
 
         {/* OFFERINGS */}
         <div className="footer-col">
@@ -90,6 +91,7 @@ const Footer = () => {
           <span>|</span>
           <a href="/">Terms & Conditions</a>
         </div>
+      </div>
       </div>
     </footer>
   );

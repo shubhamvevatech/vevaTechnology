@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./successMetrics.css";
+import arrowIcon from '../../assets/images/arrowIcon.png';
 
 const metrics = [
   { label: "Client Retention", value: 92, delay: 0 },
@@ -55,7 +56,9 @@ const SuccessMetrics = () => {
                     animationDelay: `${item.delay}ms`,
                   }}
                 >
-                  <span className="metric-arrow">➜</span>
+                  <span className="metric-arrow">
+                    <img src={arrowIcon} alt="Mail Icon" width="24" />
+                  </span>
                 </div>
               </div>
 

@@ -5,7 +5,7 @@
 
 .tech-section {
   position: relative;
-  padding: 90px 20px;
+  padding: 10px 20px 40px;
   color: white;
   text-align: center;
   overflow: hidden;
@@ -115,7 +115,12 @@
 /* RESPONSIVE */
 @media (max-width: 1100px) {
   .tech-grid {
+    display: grid !important;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tech-card{
+    width: auto;
   }
 }
 
@@ -132,5 +137,9 @@
 
   .tech-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-section {
+    padding: 30px 0px;
   }
 }

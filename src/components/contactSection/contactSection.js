@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contactSection.css";
 
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+
 const ContactSection = () => {
+  const [phone, setPhone] = useState("");
   return (
     <section className="contact-section">
       <div className="contact-wrapper">
@@ -53,8 +57,19 @@ const ContactSection = () => {
               <input type="email" placeholder="Enter your email" />
             </div>
 
-            <div className="form-row">
+            {/* <div className="form-row">
               <input type="text" placeholder="+44" />
+              <input type="text" placeholder="Enter your country" />
+            </div> */}
+
+            <div className="form-row phone-row">
+              <PhoneInput
+                country={"gb"}
+                value={phone}
+                onChange={(phone) => setPhone(phone)}
+                enableSearch
+                placeholder="Mobile number"
+              />
               <input type="text" placeholder="Enter your country" />
             </div>
 

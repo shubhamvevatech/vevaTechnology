@@ -8,6 +8,7 @@
   margin: auto;
   display: flex;
   gap: 40px;
+  /* flex-wrap: wrap; */
 }
 
 /* LEFT */
@@ -140,9 +141,33 @@ label.checkbox input {
   cursor: pointer;
 }
 
+.react-tel-input {
+    height: max-content;
+}
+
+.react-tel-input .form-control {
+    height: unset;
+    width: 100%;
+    outline: none;
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-  }
+.contact-section {
+    padding: 0px;
+}
+
+.contact-wrapper {
+  display: block;
+}
+
+.contact-left {
+    width: auto;
+    border-radius: 0px;
+}
+
+.contact-right {
+    width: auto;
+    border-radius: 0px;
+}
 }

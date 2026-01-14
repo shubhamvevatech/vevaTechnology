@@ -4,8 +4,7 @@
   padding: 60px 20px 30px;
 }
 
-.footer-container {
-  max-width: 1200px;
+.footer-section-main {
   margin: auto;
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
@@ -59,6 +58,24 @@
   opacity: 0.9;
 }
 
+.footer-col ul li {
+    padding-left: 10px;
+    position: relative;
+}
+
+.footer-col ul li:before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    list-style: disc;
+    border: 1px solid;
+}
+
 .location h5 {
   font-size: 14px;
   margin-bottom: 10px;
@@ -93,7 +110,7 @@
 /* ================= MOBILE ACCORDION ================= */
 @media (max-width: 768px) {
 
-  .footer-container {
+  .footer-section-main {
     grid-template-columns: 1fr;
     gap: 20px;
   }

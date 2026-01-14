@@ -73,3 +73,19 @@
   font-size: 0.95rem;
   color: #d0d4da;
 }
+
+@media (max-width: 768px) {
+.service-card {
+  width: calc(50% - 20px);
+}
+}
+
+@media (max-width: 600px) {
+.service-card {
+  width: calc(100% - 20px);
+}
+
+.services-section {
+  padding: 30px 0px;
+}
+}

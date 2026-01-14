@@ -79,7 +79,7 @@ section.metrics-section {
   height: 8px;
   background: #e6e6e6;
   border-radius: 20px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
@@ -96,7 +96,7 @@ section.metrics-section {
 .metric-arrow {
   position: absolute;
   right: -8px;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   font-size: 18px;
   color: #0077ff;
@@ -141,6 +141,7 @@ section.metrics-section {
 @media (max-width: 900px) {
   .metrics-container {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .metrics-left h2 {
