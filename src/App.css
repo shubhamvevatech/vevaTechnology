@@ -1,0 +1,14 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.App {
+    background: linear-gradient(80deg, #4f0150 40%, #fff0 100%);
+}

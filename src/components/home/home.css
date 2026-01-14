@@ -1,0 +1,121 @@
+/* Announcement Bar */
+.announcement-bar_bg{
+    background-color: #2d4b8b;
+}
+
+.announcement-bar {
+  color: #fff;
+  text-align: center;
+  padding: 15px 5px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.announce_mobile-no {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.annou_mail_phon-no {
+    display: flex;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+a.sm_cls_announ {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.annou-mailID {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* Navbar */
+.nav-bar_bg{
+    background-color: #fff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    color: #000;
+    width: calc(60% - 6.66px);
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.navi_btn_sec{
+    width: calc(20% - 6.66px);
+    display: flex;
+    justify-content: center;
+}
+.nav-btn {
+    background: linear-gradient(80deg, #0089f7 40%, #4f0150 100%);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px 0px 10px 0px;
+    width: 50%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo {
+    width: calc(20% - 6.66px);
+    font-weight: bold;
+}
+/* Banner */
+.banner {
+    height: 450px;
+}
+
+img.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slick-dots {
+    bottom: 10px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    font-size: 16px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px !important;
+}

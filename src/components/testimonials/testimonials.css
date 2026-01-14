@@ -1,0 +1,119 @@
+.testimonial-section {
+    padding: 0px 20px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    background-image: url(https://samyotech.com/assets/Images/successClientBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50%;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+/* HEADER */
+.testimonial-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0b4f83;
+  position: relative;
+}
+
+.testimonial-header h2 span {
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #ffb703;
+  margin: 12px auto 0;
+}
+
+.testimonial-header p {
+  margin-top: 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* SLIDER */
+.testimonial-slider {
+  margin-top: 60px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+/* CARD */
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 360px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  position: relative;
+  text-align: left;
+}
+
+.quote {
+  font-size: 60px;
+  font-weight: 800;
+  color: #000;
+  line-height: 1;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  color: #444;
+  margin: 10px 0 25px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-footer h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.testimonial-footer span {
+  font-size: 13px;
+  color: #666;
+}
+
+.testimonial-footer img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ANIMATION */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 300px;
+  }
+
+  .testimonial-header h2 {
+    font-size: 28px;
+  }
+}

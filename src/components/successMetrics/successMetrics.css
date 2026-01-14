@@ -1,0 +1,149 @@
+section.metrics-section {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(rgba(47, 128, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 128, 255, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridBreath 6s ease-in-out infinite;
+  padding: 90px 20px;
+
+}
+
+@keyframes gridBreath {
+  0% {
+    background-size: 40px 40px;
+    opacity: 0.9;
+  }
+  50% {
+    background-size: 44px 44px;
+    opacity: 1;
+  }
+  100% {
+    background-size: 40px 40px;
+    opacity: 0.9;
+  }
+}
+
+.metrics-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* LEFT */
+.metrics-tag {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #0077ff;
+}
+
+.metrics-left h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 15px 0;
+  line-height: 1.2;
+}
+
+.metrics-left p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* RIGHT */
+.metrics-small-title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.metric-row {
+  margin-bottom: 28px;
+}
+
+.metric-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* BAR */
+.metric-bar {
+  width: 100%;
+  height: 8px;
+  background: #e6e6e6;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.metric-progress {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #6ec6ff, #0095ff);
+  border-radius: 20px;
+  position: relative;
+  animation: progressFill 1.6s ease forwards;
+}
+
+/* ARROW */
+.metric-arrow {
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #0077ff;
+  animation: arrowPulse 1.2s infinite;
+}
+
+/* SCALE */
+.metric-scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* ANIMATIONS */
+@keyframes progressFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--target-width);
+  }
+}
+
+@keyframes arrowPulse {
+  0% {
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50%) translateX(6px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .metrics-container {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-left h2 {
+    font-size: 32px;
+  }
+}
